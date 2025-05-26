@@ -1,0 +1,210 @@
+/* Kleuren */
+:root {
+  --bistre: #3C250F;
+  --almond: #E9D5C0;
+  --plum: #E9B2E4;
+  --moonstone: #51BCD4;
+  --melon: #E8AAAA;
+  --vista-blue: #98A0E3;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif; /* Vervanger voor Termina */
+  background-color: #E8AAAA;
+  color: #3C250F;
+}
+
+/* Navigatie */
+.navbar {
+  background-color: #E9D5C0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #3C250F;
+  font-weight: normal;
+  padding: 8px 12px;
+  border: 1px solid #3C250F;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #51BCD4;
+  font-weight: bold;
+  color: #3C250F;
+}
+
+/* Hero sectie */
+.hero,
+.over-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  text-align: center;
+}
+
+.start,
+.midden,
+.werken {
+    font-size: 10rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 5rem;
+}
+
+.start h2 {
+    font-size: 3rem;
+}
+
+
+
+.appel-paars{
+    margin-left: 16rem;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.hero-text p,
+.over-text p {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* Avatar */
+.hero-img img {
+  width: 200px;
+  height: auto;
+}
+
+
+.indesigncon{
+    margin-left: 100rem;
+}
+
+.gebogen{
+  margin-top: 3rem;
+  margin-left: 4rem;
+}
+
+.over-text p{
+  line-height: 1.5;
+  padding: 2rem;
+}
+
+.werken img{
+    width: 60rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.werken h1{
+  padding: 4rem;
+}
+
+.werken-twee,
+.werken-drie{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 4rem;
+  gap: 4rem;
+}
+
+.werken-twee img,
+.werken-drie{
+  width: 25rem;
+}
+
+.werken-twee p{
+  font-size: 2rem;
+}
+
+p{
+  font-size: 2rem;
+  margin: 2rem;
+  padding: 2rem;
+  text-align:left;
+  line-height: 1.2;
+}
+
+/* Responsief */
+@media  (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-img img {
+    width: 150px;
+  }
+
+  .start{
+    font-size: 4rem;
+  }
+
+  .start h2{
+    font-size: 1.5rem;
+  }
+
+  .appel-paars img{
+    width: 50px;
+  }
+  .appel-paars{
+    margin-left: 2rem;
+  }
+
+  .indesigncon{
+    margin-left: 10rem;
+    width: 30px;
+  }
+
+  .gebogen img{
+    max-width: 26rem;
+  }
+
+  .werken img{
+    width: 30rem;
+  }
+
+  h1{
+    font-size: 4rem;
+  }
+}
